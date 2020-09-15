@@ -1,0 +1,13 @@
+.about {
+  margin-bottom: 120px;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__text {
+  line-height: 30px;
+  max-width: 580px;
+  font-weight: 500;
+}

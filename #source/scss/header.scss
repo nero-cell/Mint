@@ -1,0 +1,168 @@
+.navbar-brand {
+    height: 80px;
+    img {
+        height: 100%;
+    }
+}
+
+.nav-link {
+    transition: .5s;
+    color: #000;
+    font-size: 15px;
+    font-family: $fontf;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #ffe600;
+}
+
+
+.header__bottom {
+    padding-top: 220px;
+}
+
+.header__bottom {
+    .container {
+        display: flex;
+    }
+}
+
+.header__content {
+    max-width: 560px;
+}
+
+.header__title {
+    max-width: 520px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: $fontf;
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 800;            
+}
+
+.header__text {
+    margin-bottom: 45px;
+}
+
+.text {
+    max-width: 560px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: $fontf;
+}
+
+.button {
+    background: #ffe600;
+    border: 2px solid #ffe600;
+    padding: 20px 30px;
+    transition: .5s;
+    span {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 800;
+        font-family: $fontf;
+        text-transform: uppercase;
+    }
+
+    &:hover,
+    &:focus {
+        background: #ffffff;
+    }
+}
+
+.header__image {
+    max-width: 570px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .header__content {
+        max-width: 400px;
+    }
+    
+    .header__title {
+        max-width: 400px;
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .title {
+        line-height: 50px;        
+    }
+}
+
+@media(max-width: 768px) {
+    .header__bottom {
+        .container {
+            display: block;
+        }
+    }
+    .header__content {
+        max-width: 100%;
+    }
+    
+    .header__title {
+        margin: 0 auto;
+        max-width: 80%;
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .title {
+        font-size: 60px;
+        line-height: 80px;      
+        text-align: center;  
+    }
+
+    .text {
+        margin: 0 auto;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    
+    .header__button {
+        max-width: 190px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .header__image {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 660px) {
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 450px) {
+    .header__bottom {
+        padding-top: 100px;
+    }
+
+    .title {
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

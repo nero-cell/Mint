@@ -1,0 +1,13 @@
+.blog {
+  padding: 120px 0;
+  margin-bottom: 120px;
+  background: #fbfbfb;
+}
+
+.card {
+  margin: 20px;
+}
+
+.card-body {
+  padding: 40px 30px;
+}
