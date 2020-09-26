@@ -100,11 +100,14 @@
     @include flexbox;
     justify-content: center;
     align-items: center;
-    img {
+    a {
         margin: 0 40px;
-        height: 30px;
+    }
+    i {
+        font-size: 40px;
+        color: #000000;
         &:hover {
-            fill: #ffe600;
+            color: #ffe600;
         }
     }
 }

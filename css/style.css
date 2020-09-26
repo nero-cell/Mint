@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  color: #ffe600;
+  color: #ffe600 !important;
 }
 
 .header__bottom {
@@ -807,13 +807,17 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
-.contact__social img {
+.contact__social a {
   margin: 0 40px;
-  height: 30px;
 }
 
-.contact__social img:hover {
-  fill: #ffe600;
+.contact__social i {
+  font-size: 40px;
+  color: #000000;
+}
+
+.contact__social i:hover {
+  color: #ffe600;
 }
 
 @media (max-width: 768px) {
@@ -879,9 +883,16 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
-.footer__left img {
+.footer__left a {
   height: 50px;
   margin-right: 20px;
+}
+
+.footer__left a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer__text,
@@ -915,7 +926,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 60px;
     text-align: center;
   }
-  .footer .footer__left img {
+  .footer .footer__left a {
     margin: 0 0 20px 0;
   }
   .footer .footer__right {

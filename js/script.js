@@ -1,7 +1,20 @@
 $(function() {
+    $('html, body').animate({
+        width: '+=0.0001%'
+    }, 100);
+    $('html, body').animate({
+        width: '100%'
+    }, 100);
+
+    $('a').click(function() {
+        let scrollElem = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(scrollElem).offset().top
+        }, 1000);
+    });
     //owl carousel
     $(".partners .owl-carousel").owlCarousel({
-        items: 3,
         loop: true,
         responsiveClass:true,
         responsive:{
@@ -22,6 +35,8 @@ $(function() {
             }
         }
     });
+
+    
 
 
     $(".blog .owl-carousel").owlCarousel({
@@ -65,13 +80,4 @@ $(function() {
         }
     });
     //====================
-
-
-    //back to top
-    $('.top').click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
-    //=============
 });
